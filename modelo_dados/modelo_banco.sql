@@ -1,5 +1,5 @@
-create database escola_cadastros;
-use escola_cadastros;
+CREATE DATABASE escola_cadastros;
+USE escola_cadastros;
 
 /*Comandos DDL para criar as tabelas*/
 CREATE TABLE pessoa_fisica ( 
@@ -18,7 +18,7 @@ CREATE TABLE estudante (
 	cpf CHAR(11), 
     curso text NOT NULL, 
     matricula CHAR(8) NOT NULL,
-    FOREIGN KEY (cpf) REFERENCES pessoa_fisica (cpf) );
+    FOREIGN KEY (cpf) REFERENCES pessoa_fisica (cpf));
 
 CREATE TABLE pessoa_juridica (
 	razao_social text NOT NULL, 
